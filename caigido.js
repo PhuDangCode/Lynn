@@ -4,6 +4,9 @@
  */
 
 class Caigido {
+  // ASCII character code constants
+  static ASCII_UPPERCASE_A = 65;
+  static ASCII_LOWERCASE_A = 97;
   /**
    * Reverse a string
    * @param {string} text - The text to reverse
@@ -53,7 +56,7 @@ class Caigido {
       throw new TypeError('Input must be a string');
     }
     return text.replace(/[a-zA-Z]/g, (char) => {
-      const start = char <= 'Z' ? 65 : 97;
+      const start = char <= 'Z' ? Caigido.ASCII_UPPERCASE_A : Caigido.ASCII_LOWERCASE_A;
       return String.fromCharCode(start + (char.charCodeAt(0) - start + 13) % 26);
     });
   }
