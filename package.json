@@ -1,0 +1,12 @@
+{
+  "name": "lynn-caigido",
+  "version": "1.0.0",
+  "description": "Caigido - A simple text transformation utility",
+  "main": "caigido.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": ["caigido", "text", "utility"],
+  "author": "PhuDangCode",
+  "license": "MIT"
+}
